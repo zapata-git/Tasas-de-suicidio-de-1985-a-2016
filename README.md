@@ -27,7 +27,6 @@ El enlace a la fuente de datos es el siguiente: https://www.kaggle.com/datasets/
 files.upload()
 
 #Extracción de los archivos del conjunto de datos descargados desde Kaggle
-
 * El conjunto de datos descargado
 
 * Los archivos quedan almacenados en el entorno de ejecución de Google Colab siempre y cuando se haya autorizado el acceso de la cuenta de Google a este.
