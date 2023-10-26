@@ -33,13 +33,13 @@ files.upload()
 * Los archivos quedan almacenados en el entorno de ejecución de Google Colab siempre y cuando se haya autorizado el acceso de la cuenta de Google a este.
 * Esto se debió realizar en bloques de código anteriores.
 
-  ```
+```
 !rm -r ~/.kaggle
 !mkdir ~/.kaggle
 !cp kaggle.json ~/.kaggle/
 !mv ./kaggle.json ~/.kaggle/
 !chmod 600 ~/.kaggle/kaggle.json
-  ```
+```
 
 #!kaggle datasets list
 
