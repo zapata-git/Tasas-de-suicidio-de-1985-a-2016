@@ -4,7 +4,7 @@ con el objetivo de encontrar correlaciones con tasas de suicidio más altas en d
 
 ## Integrantes del proyecto
 
-- JUAN FERNANDO CARDONA RUIZ, CC , Ingeniería de Sistemas.
+- JUAN FERNANDO CARDONA RUIZ, CC 1044508271, Ingeniería de Sistemas.
 - CARLOS OSVALDO ZAPATA ARANGO, CC 1044504411, Ingeniería de Sistemas.
 
 ## Fuente de datos
