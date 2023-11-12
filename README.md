@@ -65,10 +65,10 @@ Estos pasos le permitirán obtener el conjunto de datos necesario para realizar 
 
 # Descripción de Notebooks en el Proyecto "Tasas-de-suicidio-de-1985-a-2016"
 
-## Notebook 0: Análisis Exploratorio de Datos (EDA)
+**[Notebook 0: Análisis Exploratorio de Datos (EDA)](0 EDA.ipynb)**
 
 El Notebook de Análisis Exploratorio de Datos (EDA) se centra en explorar y comprender la estructura y características del conjunto de datos "Suicide Rates Overview 1985 to 2016". Aquí, se realizan diversas visualizaciones y estadísticas descriptivas para identificar patrones, tendencias y posibles relaciones entre las variables. Los aspectos clave abordados incluyen la distribución de tasas de suicidio a lo largo del tiempo, análisis demográficos y económicos, y otras tendencias relevantes. Este notebook es el punto de partida para comprender el conjunto de datos antes de aplicar modelos de regresión.
 
-## Notebook 1: Modelos de Regresión
+**[Notebook 1: Modelos de Regresión](1 Modelos de regresión.ipynb)**  
 
 El Notebook de Modelos de Regresión se enfoca en la construcción y evaluación de modelos predictivos para las tasas de suicidio. Aquí se utilizan varios modelos de regresión, como Regresión Lineal, Ridge, Lasso, Support Vector Regression, Random Forest Regression, Gradient Boosting Regression y Multi-layer Perceptron Regression. El proceso incluye la carga del conjunto de datos procesado, la partición en conjuntos de entrenamiento y prueba, la búsqueda de hiperparámetros y la evaluación de modelos mediante métricas como el Error Cuadrático Medio (MSE), el coeficiente de determinación (R2) y el Error Absoluto Mediano (Median Absolute Error). Se proporciona un análisis detallado de cada modelo y sus resultados, ayudando al lector a entender la efectividad y limitaciones de cada enfoque.
