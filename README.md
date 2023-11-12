@@ -1,10 +1,11 @@
+# Proyecto "Tasas-de-suicidio-de-1985-a-2016"
 El siguiente README proporciona información detallada sobre el proyecto "Tasas-de-suicidio-de-1985-a-2016" que utiliza el conjunto de datos "Suicide Rates Overview 1985 to 2016". Este conjunto de datos recopila información sobre tasas de suicidio a nivel mundial con el propósito de analizar las correlaciones con tasas de suicidio más altas en diferentes cohortes a lo largo del tiempo.
 
 ## Notebook 0: Análisis Exploratorio de Datos (EDA)
-En este notebook, el usuario encontrará visualizaciones y análisis descriptivos que proporcionarán información clave sobre las tendencias en las tasas de suicidio y las variables relevantes. El propósito principal es explorar y comprender la estructura y características del conjunto de datos "Suicide Rates Overview 1985 to 2016".
+En este notebook, se encontrará visualizaciones y análisis descriptivos que proporcionarán información clave sobre las tendencias en las tasas de suicidio y las variables relevantes. El propósito principal es explorar y comprender la estructura y características del conjunto de datos "Suicide Rates Overview 1985 to 2016".
 
 ## Notebook 1: Modelos de Regresión
-Después de haber adquirido una comprensión inicial del conjunto de datos en el Notebook 0, el usuario puede dirigirse al Notebook de Modelos de Regresión. Aquí, se aplican diversos modelos para predecir tasas de suicidio, y se realiza un análisis comparativo para identificar cuál de ellos se ajusta mejor a los datos. Este notebook proporcionará información sobre la capacidad predictiva de diferentes modelos, permitiendo al usuario tomar decisiones informadas sobre su aplicabilidad en el contexto del proyecto.
+Después de haber adquirido una comprensión inicial del conjunto de datos en el Notebook 0, se encuentra el Notebook de Modelos de Regresión. Aquí, se aplican diversos modelos para predecir tasas de suicidio, y se realiza un análisis comparativo para identificar cuál de ellos se ajusta mejor a los datos. Este notebook proporcionará información sobre la capacidad predictiva de diferentes modelos, permitiendo al usuario tomar decisiones informadas sobre su aplicabilidad en el contexto del proyecto.
 
 ## Integrantes del Proyecto
 
@@ -61,6 +62,8 @@ Una vez configurado el JSON Web Token y el entorno de ejecución, puede descarga
 ```
 
 Estos pasos le permitirán obtener el conjunto de datos necesario para realizar análisis y modelado en este proyecto. Con estos datos, podrá explorar tendencias, correlaciones y patrones relacionados con las tasas de suicidio a lo largo de los años.
+
+# Descripción de Notebooks en el Proyecto "Tasas-de-suicidio-de-1985-a-2016"
 
 ## Notebook 0: Análisis Exploratorio de Datos (EDA)
 
