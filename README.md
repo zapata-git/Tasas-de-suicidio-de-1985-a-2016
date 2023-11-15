@@ -53,15 +53,15 @@ Se aplicaron varios modelos de regresión para predecir las tasas de suicidio:
 - **Random Forest y Gradient Boosting:** Destacaron con un buen rendimiento y mayor capacidad para explicar la variabilidad en los datos.
 - **MLP:** Aunque aceptable, no superó a los modelos basados en árboles en este contexto.
 
-## Resultados Actualizados del Análisis de Modelos
+## Resultados del Análisis de Modelos de Regresión
 
 El modelo Random Forest Regression destacó con un buen desempeño, presentando un MSE de aproximadamente 4.04 en el conjunto de entrenamiento y 60.80 en el conjunto de prueba, y un coeficiente de determinación (R2) de aproximadamente 0.8260. Mientras que Gradient Boosting Regression tuvo un rendimiento similar con un MSE de aproximadamente 2.64 en el conjunto de entrenamiento y 60.27 en el conjunto de prueba, y un R2 de aproximadamente 0.8275.
 
-## Análisis de Clustering
+## Resultados del Análisis de Clustering K-Means
 
-Se implementó un modelo de clustering con los siguientes resultados:
+Se aplicaron modelos de clustering K-Means para identificar patrones en los datos:
 
-- **Mejores Hiperparámetros:** Algoritmo 'Elkan', inicialización 'K-means++', 11 clusters, tolerancia 0.001.
-- **Puntuación de Validación:** Puntuación media de alrededor de 6905, superior a otros modelos, indicando su eficiencia en la segmentación y definición de clusters.
-
-En resumen, este proyecto ofrece una comprensión detallada de las tasas de suicidio a nivel mundial, analizando correlaciones, patrones y aplicando modelos predictivos para predecir estas tasas con diferentes enfoques y herramientas de aprendizaje automático.
+- **Mejor Modelo:** El modelo con mejor desempeño fue el que utilizó 2 clusters, inicialización aleatoria, algoritmo de fuerza bruta y tolerancia de 1e-05.
+    - Tiempo de evaluación: 0.3037 segundos en promedio.
+    - Puntaje de prueba: -59425.564754.
+    - Desviación estándar del puntaje de prueba: 11732.176734.
