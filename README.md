@@ -1,4 +1,10 @@
-El siguiente README proporciona información detallada sobre el proyecto "Tasas-de-suicidio-de-1985-a-2016" que utiliza el conjunto de datos "Suicide Rates Overview 1985 to 2016". Este conjunto de datos recopila información sobre tasas de suicidio a nivel mundial con el propósito de analizar las correlaciones con tasas de suicidio más altas en diferentes cohortes a lo largo del tiempo.
+¡Claro! Aquí tienes un README que detalla todo sobre el proyecto de tasas de suicidio utilizando el conjunto de datos "Suicide Rates Overview 1985 to 2016":
+
+---
+
+# Tasas-de-suicidio-de-1985-a-2016
+
+Este proyecto analiza las tasas de suicidio a nivel mundial utilizando el conjunto de datos "Suicide Rates Overview 1985 to 2016". El análisis busca comprender las correlaciones y patrones asociados con tasas de suicidio más altas en diferentes cohortes a lo largo del tiempo.
 
 ## Integrantes del Proyecto
 
@@ -7,7 +13,7 @@ El siguiente README proporciona información detallada sobre el proyecto "Tasas-
 
 ## Fuente de Datos
 
-Los datos utilizados en este proyecto provienen de una competencia en Kaggle titulada "Resumen de las tasas de suicidio de 1985 a 2016". Puede acceder a la fuente de datos a través del siguiente enlace: [Suicide Rates Overview 1985 to 2016](https://www.kaggle.com/datasets/russellyates88/suicide-rates-overview-1985-to-2016).
+Los datos se obtuvieron de la competencia en Kaggle llamada "Resumen de las tasas de suicidio de 1985 a 2016". Puede acceder a la fuente de datos [aquí](https://www.kaggle.com/datasets/russellyates88/suicide-rates-overview-1985-to-2016).
 
 ## Requerimientos
 
@@ -23,35 +29,43 @@ Asegúrese de contar con las siguientes herramientas y bibliotecas instaladas en
 
 ### 1. Descargar el JSON Web Token (Kaggle API Token)
 
-Para descargar los datos del conjunto de datos desde Kaggle, debe contar con un archivo JSON Web Token (API Token) que identifica su cuenta. Puede obtener su propio token desde la página de configuración de su cuenta de Kaggle en el enlace [https://www.kaggle.com/settings/account](https://www.kaggle.com/settings/account). Este token es único y personal para cada cuenta.
+Para descargar los datos del conjunto de datos desde Kaggle, debe contar con un archivo JSON Web Token (API Token) que identifica su cuenta. Puede obtener su propio token desde la página de configuración de su cuenta de Kaggle [aquí](https://www.kaggle.com/settings/account). Este token es único y personal para cada cuenta.
 
 ### 2. Cargar el JSON Web Token
 
-Una vez descargado el JSON Web Token, cárguelo en el entorno donde ejecutará el proyecto. Puede realizar esta carga a través del código siguiente:
-
-```python
-from google.colab import files
-files.upload()
-```
+Una vez descargado el JSON Web Token, cárguelo en el entorno donde ejecutará el proyecto utilizando el código proporcionado.
 
 ### 3. Extracción de los Archivos del Conjunto de Datos
 
-Luego de cargar el JSON Web Token, proceda a extraer los archivos del conjunto de datos desde Kaggle. Asegúrese de que los archivos queden almacenados en el entorno de ejecución de Google Colab. Este proceso debe realizarse en bloques de código previos:
+Luego de cargar el JSON Web Token, proceda a extraer los archivos del conjunto de datos desde Kaggle. Asegúrese de almacenarlos en el entorno de ejecución. Los comandos necesarios están detallados en el README del proyecto.
 
-```python
-!rm -r ~/.kaggle
-!mkdir ~/.kaggle
-!cp kaggle.json ~/.kaggle/
-!mv ./kaggle.json ~/.kaggle/
-!chmod 600 ~/.kaggle/kaggle.json
-```
+## Conclusiones del Análisis Exploratorio
 
-### 4. Descargar el Conjunto de Datos desde Kaggle
+El análisis exploratorio revela información clave sobre las tasas de suicidio a nivel global:
 
-Una vez configurado el JSON Web Token y el entorno de ejecución, puede descargar el conjunto de datos desde Kaggle utilizando el siguiente comando:
+- **Visión de Suicidios:** El conjunto de datos ofrece información detallada sobre suicidios en múltiples países a lo largo de varios años.
+- **Información Relevante:** Proporciona datos demográficos, cifras de suicidios, población, tasas de suicidio y datos económicos, permitiendo un análisis detallado.
+- **Valores Faltantes Tratados:** Se imputaron valores faltantes en la columna "HDI for year" utilizando la mediana de los valores disponibles.
+- **Diversidad de Formatos:** Presenta una diversidad de formatos de datos que permiten un análisis exhaustivo.
 
-```python
-!kaggle datasets download 'russellyates88/suicide-rates-overview-1985-to-2016'
-```
+## Análisis y Modelado
 
-Estos pasos le permitirán obtener el conjunto de datos necesario para realizar análisis y modelado en este proyecto. Con estos datos, podrá explorar tendencias, correlaciones y patrones relacionados con las tasas de suicidio a lo largo de los años.
+Se aplicaron varios modelos de regresión para predecir las tasas de suicidio:
+
+- **Regresión Lineal, Ridge y Lasso:** Mostraron un rendimiento limitado con errores cuadráticos medios similares.
+- **SVR:** Mejoró el rendimiento con una capacidad moderada para explicar la variabilidad en los datos.
+- **Random Forest y Gradient Boosting:** Destacaron con un buen rendimiento y mayor capacidad para explicar la variabilidad en los datos.
+- **MLP:** Aunque aceptable, no superó a los modelos basados en árboles en este contexto.
+
+## Resultados Actualizados del Análisis de Modelos
+
+El modelo Random Forest Regression destacó con un buen desempeño, presentando un MSE de aproximadamente 4.04 en el conjunto de entrenamiento y 60.80 en el conjunto de prueba, y un coeficiente de determinación (R2) de aproximadamente 0.8260. Mientras que Gradient Boosting Regression tuvo un rendimiento similar con un MSE de aproximadamente 2.64 en el conjunto de entrenamiento y 60.27 en el conjunto de prueba, y un R2 de aproximadamente 0.8275.
+
+## Análisis de Clustering
+
+Se implementó un modelo de clustering con los siguientes resultados:
+
+- **Mejores Hiperparámetros:** Algoritmo 'Elkan', inicialización 'K-means++', 11 clusters, tolerancia 0.001.
+- **Puntuación de Validación:** Puntuación media de alrededor de 6905, superior a otros modelos, indicando su eficiencia en la segmentación y definición de clusters.
+
+En resumen, este proyecto ofrece una comprensión detallada de las tasas de suicidio a nivel mundial, analizando correlaciones, patrones y aplicando modelos predictivos para predecir estas tasas con diferentes enfoques y herramientas de aprendizaje automático.
