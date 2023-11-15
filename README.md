@@ -34,6 +34,7 @@ Una vez descargado el JSON Web Token, cárguelo en el entorno donde ejecutará e
 ### 3. Extracción de los Archivos del Conjunto de Datos
 
 Luego de cargar el JSON Web Token, proceda a extraer los archivos del conjunto de datos desde Kaggle. Asegúrese de almacenarlos en el entorno de ejecución. Los comandos necesarios están detallados en el README del proyecto.
+
 ### [Notebook 0: Análisis Exploratorio de Datos (EDA)](https://github.com/zapata-git/Tasas-de-suicidio-de-1985-a-2016/blob/main/0%20EDA.ipynb)
 En este notebook, se encontrará visualizaciones y análisis descriptivos que proporcionarán información clave sobre las tendencias en las tasas de suicidio y las variables relevantes. El propósito principal es explorar y comprender la estructura y características del conjunto de datos "Suicide Rates Overview 1985 to 2016".
 
