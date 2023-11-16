@@ -35,11 +35,17 @@ Una vez descargado el JSON Web Token, cárguelo en el entorno donde ejecutará e
 
 Luego de cargar el JSON Web Token, proceda a extraer los archivos del conjunto de datos desde Kaggle. Asegúrese de almacenarlos en el entorno de ejecución. Los comandos necesarios están detallados en el README del proyecto.
 
+## Notebook.
+
 ### [Notebook 0: Análisis Exploratorio de Datos (EDA)](https://github.com/zapata-git/Tasas-de-suicidio-de-1985-a-2016/blob/main/0%20EDA.ipynb)
 En este notebook, se encontrará visualizaciones y análisis descriptivos que proporcionarán información clave sobre las tendencias en las tasas de suicidio y las variables relevantes. El propósito principal es explorar y comprender la estructura y características del conjunto de datos "Suicide Rates Overview 1985 to 2016".
 
 ### [Notebook 1: Modelos de Regresión](https://github.com/zapata-git/Tasas-de-suicidio-de-1985-a-2016/blob/main/1%20Modelos%20de%20regresi%C3%B3n.ipynb)
 Después de haber adquirido una comprensión inicial del conjunto de datos en el Notebook 0, el usuario puede dirigirse al Notebook de Modelos de Regresión. Aquí, se aplican diversos modelos para predecir tasas de suicidio, y se realiza un análisis comparativo para identificar cuál de ellos se ajusta mejor a los datos. Este notebook proporcionará información sobre la capacidad predictiva de diferentes modelos, permitiendo al usuario tomar decisiones informadas sobre su aplicabilidad en el contexto del proyecto.
+
+### [Notebook 2: Modelos de Clasificación](https://github.com/zapata-git/Tasas-de-suicidio-de-1985-a-2016/blob/main/2%20Modelos%20de%20clasificaci%C3%B3n.ipynb)
+Después de explorar y comprender el conjunto de datos en el Notebook 1: Modelos de Regresión, se puede avanzar al Notebook de Modelos de Clasificación para profundizar aún más en el análisis. En este notebook, nos sumergimos en la aplicación de diversos modelos de clasificación con el objetivo de predecir y clasificar las tasas de suicidio en diferentes cohortes y regiones.
+
 ## Conclusiones del Análisis Exploratorio
 
 El análisis exploratorio revela información clave sobre las tasas de suicidio a nivel global:
